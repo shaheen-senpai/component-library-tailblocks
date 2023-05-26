@@ -794,21 +794,21 @@ role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.background.base
 
 -- ftd.text: $header-1.cta-text-2
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 0
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.background.base
 
 -- ftd.text: $header-1.cta-text-3
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.background.base
 
 -- ftd.text: $header-1.cta-button-1
 role: $inherited.types.label-large
@@ -817,7 +817,7 @@ padding-vertical.px: 15
 padding-horizontal.px: 24
 border-radius.px: 10
 background.solid: $inherited.colors.custom.seven
-color: #ffffff
+color: $inherited.colors.background.base
 link: https://tailblocks.cc/
 
 -- end: ftd.row
@@ -884,21 +884,21 @@ role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.background.base
 
 -- ftd.text: $header-2.cta-text-2
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 0
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.background.base
 
 -- ftd.text: $header-2.cta-text-3
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.background.base
 
 -- end: ftd.row
 
@@ -912,7 +912,7 @@ padding-vertical.px: 15
 padding-horizontal.px: 24
 border-radius.px: 10
 background.solid: $inherited.colors.custom.seven
-color: #ffffff
+color: $inherited.colors.background.base
 link: https://tailblocks.cc/
 
 -- end: ftd.row
@@ -966,21 +966,21 @@ role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-right.px: 32
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.background.base
 
 -- ftd.text: $header-3.cta-text-2
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 0
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.background.base
 
 -- ftd.text: $header-3.cta-text-3
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.background.base
 
 -- end: ftd.row
 
@@ -1019,7 +1019,7 @@ padding-vertical.px: 15
 padding-horizontal.px: 24
 border-radius.px: 10
 background.solid: $inherited.colors.custom.seven
-color: #ffffff
+color: $inherited.colors.background.base
 link: https://tailblocks.cc/
 
 -- end: ftd.row
@@ -1090,21 +1090,21 @@ role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.background.base
 
 -- ftd.text: $header-4.cta-text-2
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 0
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.background.base
 
 -- ftd.text: $header-4.cta-text-3
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.background.base
 
 -- end: ftd.row
 
@@ -1117,7 +1117,7 @@ padding-vertical.px: 15
 padding-horizontal.px: 24
 border-radius.px: 10
 background.solid: $inherited.colors.custom.seven
-color: #ffffff
+color: $inherited.colors.background.base
 link: https://tailblocks.cc/
 
 
@@ -1153,7 +1153,7 @@ height: hug-content
 align-content: center
 padding-horizontal.px: 100
 padding-vertical.px: 96
-background.solid: #111827
+background.solid: $inherited.colors.background.base
 
 -- ftd.column:
 width.fixed.percent: 40
@@ -1164,12 +1164,12 @@ margin-right.px: 60
 -- ftd.text: $hero-1.headline
 margin-bottom.px: 16
 role: $inherited.types.heading-medium
-color: #ffffff
+color: $inherited.colors.border
 
 -- ftd.text: $hero-1.content
 margin-bottom.px: 32
 role: $inherited.types.copy-regular
-color: #ffffff
+color: $inherited.colors.border
 
 
 -- ftd.row:
@@ -1184,7 +1184,7 @@ background.solid: $inherited.colors.cta-primary.base
 background.solid if {hero-1.is-active-1}: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $hero-1.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-1.is-active-1, v = false)
-color: #ffffff
+color: $inherited.colors.border
 link: $hero-1.link-1
 
 -- ftd.text: $hero-1.cta-button-2
@@ -1194,11 +1194,11 @@ padding-vertical.px: 8
 padding-horizontal.px: 24
 margin-left.px: 16
 border-radius.px: 5
-background.solid: #6366f1
-background.solid if {hero-1.is-active-2}: #4f46e5
+background.solid: $inherited.colors.custom.one
+background.solid if {hero-1.is-active-2}: $inherited.colors.info.text
 $on-mouse-enter$: $ftd.set-bool($a = $hero-1.is-active-2, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-1.is-active-2, v = false)
-color: #ffffff
+color: $inherited.colors.border
 link: $hero-1.link-2
 
 
@@ -1248,7 +1248,7 @@ height: hug-content
 align-content: center
 padding-horizontal.px: 100
 padding-vertical.px: 96
-background.solid: #111827
+background.solid: $inherited.colors.background.base
 
 -- ftd.image:
 src: $hero-2.cover   
@@ -1265,13 +1265,13 @@ margin-top.px: 60
 margin-bottom.px: 16
 role: $inherited.types.heading-medium
 text-align: center
-color: #ffffff
+color: $inherited.colors.border
 
 -- ftd.text: $hero-2.content
 margin-bottom.px: 32
 role: $inherited.types.copy-regular
 text-align: center
-color: #ffffff
+color: $inherited.colors.border
 
 -- ftd.row:
 
@@ -1285,7 +1285,7 @@ background.solid: $inherited.colors.cta-primary.base
 background.solid if {hero-2.is-active-1}: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $hero-2.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-2.is-active-1, v = false)
-color: #ffffff
+color: $inherited.colors.border
 link: $hero-2.link-1
 
 -- ftd.text: $hero-2.cta-button-2
@@ -1295,11 +1295,11 @@ padding-vertical.px: 8
 padding-horizontal.px: 24
 margin-left.px: 16
 border-radius.px: 5
-background.solid: #6366f1
-background.solid if {hero-2.is-active-2}: #4f46e5
+background.solid: $inherited.colors.custom.one
+background.solid if {hero-2.is-active-2}: $inherited.colors.info.text
 $on-mouse-enter$: $ftd.set-bool($a = $hero-2.is-active-2, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-2.is-active-2, v = false)
-color: #ffffff
+color: $inherited.colors.border
 link: $hero-2.link-2
 
 -- end: ftd.row
@@ -1336,7 +1336,7 @@ height: hug-content
 align-content: center
 padding-horizontal.px: 100
 padding-vertical.px: 96
-background.solid: #111827
+background.solid: $inherited.colors.background.base
 
 
 -- ftd.column:
@@ -1360,12 +1360,12 @@ margin-left.px: 60
 -- ftd.text: $hero-3.headline
 margin-bottom.px: 16
 role: $inherited.types.heading-medium
-color: #ffffff
+color: $inherited.colors.border
 
 -- ftd.text: $hero-3.content
 margin-bottom.px: 32
 role: $inherited.types.copy-regular
-color: #ffffff
+color: $inherited.colors.border
 
 
 -- ftd.row:
@@ -1380,7 +1380,7 @@ background.solid: $inherited.colors.cta-primary.base
 background.solid if {hero-3.is-active-1}: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $hero-3.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-3.is-active-1, v = false)
-color: #ffffff
+color: $inherited.colors.border
 link: $hero-3.link-1
 
 -- ftd.text: $hero-3.cta-button-2
@@ -1390,11 +1390,11 @@ padding-vertical.px: 8
 padding-horizontal.px: 24
 margin-left.px: 16
 border-radius.px: 5
-background.solid: #6366f1
-background.solid if {hero-3.is-active-2}: #4f46e5
+background.solid: $inherited.colors.custom.one
+background.solid if {hero-3.is-active-2}: $inherited.colors.info.text
 $on-mouse-enter$: $ftd.set-bool($a = $hero-3.is-active-2, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-3.is-active-2, v = false)
-color: #ffffff
+color: $inherited.colors.border
 link: $hero-3.link-2
 
 
@@ -1432,7 +1432,7 @@ height: hug-content
 align-content: center
 padding-horizontal.px: 100
 padding-vertical.px: 96
-background.solid: #111827
+background.solid: $inherited.colors.background.base
 
 -- ftd.column:
 width.fixed.percent: 40
@@ -1443,12 +1443,12 @@ margin-right.px: 60
 -- ftd.text: $hero-4.headline
 margin-bottom.px: 16
 role: $inherited.types.heading-medium
-color: #ffffff
+color: $inherited.colors.border
 
 -- ftd.text: $hero-4.content
 margin-bottom.px: 32
 role: $inherited.types.copy-regular
-color: #ffffff
+color: $inherited.colors.border
 
 
 -- ftd.row:
@@ -1464,11 +1464,11 @@ margin-right.px: 16
 width: fill-container 
 border-radius.px: 5
 border-width.px: 1
-border-color: #4f46e5
+border-color: $inherited.colors.border
 type: text
 role: $inherited.types.copy-small
-background.solid: #1F2937
-color: #ffffff
+background.solid: $inherited.colors.background.code
+color: $inherited.colors.border
 
 -- ftd.text: $hero-4.cta-button-1
 role: $inherited.types.label-large
@@ -1476,11 +1476,11 @@ text-align: center
 padding-vertical.px: 8
 padding-horizontal.px: 24
 border-radius.px: 5
-background.solid: #6366f1
-background.solid if {hero-4.is-active-1}: #4f46e5
+background.solid: $inherited.colors.custom.one
+background.solid if {hero-4.is-active-1}: $inherited.colors.info.text
 $on-mouse-enter$: $ftd.set-bool($a = $hero-4.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-4.is-active-1, v = false)
-color: #ffffff
+color: $inherited.colors.border
 link: $hero-4.link-1
 
 -- end: ftd.row
@@ -1492,7 +1492,7 @@ height: hug-content
 padding-vertical.px: 12
 padding-horizontal.px: 20
 border-radius.px: 8
-background.solid: #1F2937
+background.solid: $inherited.colors.cta-tertiary.hover
 
 -- ftd.image:
 src: $hero-4.playstore
@@ -1507,11 +1507,11 @@ align-content: left
 -- ftd.text: GET IT ON
 role: $inherited.types.label-small
 margin-bottom.px: 4
-color: #ffffff
+color: $inherited.colors.border
 
 -- ftd.text: Google Play
 role: $inherited.types.label-large
-color: #ffffff
+color: $inherited.colors.border
 
 -- end: ftd.column
 -- end: ftd.row
@@ -1523,7 +1523,7 @@ padding-vertical.px: 12
 padding-horizontal.px: 20
 margin-left.px: 16
 border-radius.px: 8
-background.solid: #1F2937
+background.solid: $inherited.colors.cta-tertiary.hover
 
 -- ftd.image:
 src: $hero-4.appstore
@@ -1538,11 +1538,11 @@ align-content: left
 -- ftd.text: Download on the
 role: $inherited.types.label-small
 margin-bottom.px: 4
-color: #ffffff
+color: $inherited.colors.border
 
 -- ftd.text: App Store
 role: $inherited.types.label-large
-color: #ffffff
+color: $inherited.colors.border
 
 -- end: ftd.column
 

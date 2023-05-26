@@ -128,21 +128,21 @@ role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.background.base
 
 \-- ftd.text: $header-4.cta-text-2
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 0
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.background.base
 
 \-- ftd.text: $header-4.cta-text-3
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.background.base
 
 \-- end: ftd.row
 
@@ -155,7 +155,7 @@ padding-vertical.px: 15
 padding-horizontal.px: 24
 border-radius.px: 10
 background.solid: $inherited.colors.custom.seven
-color: #ffffff
+color: $inherited.colors.background.base
 link: https://tailblocks.cc/
 
 
